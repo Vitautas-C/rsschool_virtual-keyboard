@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "Lato";
+    src: url(/fonts/Lato/Lato-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    margin: 0 auto;
+    color: white;
+}
+
+
+/* Keyboard styles start*/
+
+.keyboard__wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.keyboard__display {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #004134;
+    border-radius: 5px;
+}
+
+.keyboard__text {
+    content: "";
+    width: calc(100vw - 20px);
+    height: calc(100% - 20px);
+    padding: 10px;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // white-space: pre-wrap;
+    resize: none;
+}
+
+.keyboard-toggle {
+    margin: 5px 10px;
+    font-size: 50px;
+    position: absolute;
+    z-index: 5;
+    top: 0%;
+    right: 0%;
+    color: gray;
+}
+
+.keyboard-toggle:hover {
+    cursor: pointer;
+}
+
+.keyboard-toggle-active {
+    color: greenyellow;
+}
+
+.keyboard__button-close {
+    margin: 10px;
+    font-size: 26px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.keyboard__button-close:hover,
+.keyboard__button-close:focus,
+.keyboard__button-close:active {
+    cursor: pointer;
+    box-shadow: 0 0 10px, 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.keyboard__button-backspace,
+.keyboard__button-clear,
+.keyboard__button-enter,
+.keyboard__button-shift,
+.keyboard__button-caps-up,
+.keyboard__button-caps-down {
+    margin: 10px;
+    font-size: 26px;
+}
+
+.keyboard__button-enter {
+    transform: rotate(90deg) scale(1, -1);
+}
+
+.keyboard__keys {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 20px 20px;
+    background-color: gray;
+}
+
+.keyboard__line {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.key {
+    width: 6%;
+    max-width: 90px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000085;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+.key:hover,
+.key:focus,
+.key:active {
+    cursor: pointer;
+}
+
+.key:active {
+    background-color: #ffffff;
+    color: #00000085;
+    box-shadow: #00000085 0 0 10px, 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.language {
+    text-transform: uppercase;
+    background-color: #000000;
+}
+
+.service,
+.shift {
+    width: 12%;
+    max-width: 120px;
+    background-color: #000000;
+}
+
+.shift {
+    position: relative;
+}
+
+.shift-toggle,
+.capsLock-toggle {
+    content: "";
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #00000085;
+    border-radius: 50%;
+}
+
+.shift-toggle-active {
+    background-color: greenyellow;
+}
+
+.keyboard-toggle-shift-reverse {
+    background-color: aqua;
+}
+
+.space {
+    width: 65%;
+    max-width: 650px;
+    background-color: #000000;
+}
+
+
+/* Keyboard styles end*/
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
