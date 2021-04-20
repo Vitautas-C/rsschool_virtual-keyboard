@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study projects</title>
+    <script src="https://kit.fontawesome.com/e8eebc1614.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/style.css">
+
+</head>
+
+<body class="projects">
+
+    <main class="main">
+        <!-- Keyboard start -->
+        <section class="keyboard">
+            <div class="keyboard__wrapper">
+
+                <div class="keyboard__display">
+                    <textarea class="keyboard__text">
+                    </textarea>
+                    <span class="fas fa-keyboard keyboard-toggle" title="Keyboard toggle"></span>
+                </div>
+
+                <div class="keyboard__keys hidden">
+
+                    <span class="far fa-window-close keyboard__button-close"></span>
+
+                    <div class="keyboard__line">
+                        <div class="key" data-shift-en="~" data-shift-ru="ё" data-non-shift="`">`</div>
+                        <div class="key" data-shift-en="!" data-shift-ru="!" data-non-shift="1">1</div>
+                        <div class="key" data-shift-en="@" data-shift-ru='"' data-non-shift="2">2</div>
+                        <div class="key" data-shift-en="#" data-shift-ru="№" data-non-shift="3">3</div>
+                        <div class="key" data-shift-en="$" data-shift-ru=";" data-non-shift="4">4</div>
+                        <div class="key" data-shift-en="%" data-shift-ru="%" data-non-shift="5">5</div>
+                        <div class="key" data-shift-en="^" data-shift-ru=":" data-non-shift="6">6</div>
+                        <div class="key" data-shift-en="&" data-shift-ru="?" data-non-shift="7">7</div>
+                        <div class="key" data-shift-en="*" data-shift-ru="*" data-non-shift="8">8</div>
+                        <div class="key" data-shift-en="(" data-shift-ru="(" data-non-shift="9">9</div>
+                        <div class="key" data-shift-en=")" data-shift-ru=")" data-non-shift="0">0</div>
+                        <div class="key" data-shift-en="_" data-shift-ru="_" data-non-shift="-">-</div>
+                        <div class="key" data-shift-en="+" data-shift-ru="+" data-non-shift="=">=</div>
+                        <div class="key service" data-action="clearAll">
+                            <span class="fas fa-trash keyboard__button-clear" title="Clear all"></span>
+                        </div>
+                    </div>
+                    <div class="keyboard__line">
+                        <div class="key" data-en="q" data-ru="й">q</div>
+                        <div class="key" data-en="w" data-ru="ц">w</div>
+                        <div class="key" data-en="e" data-ru="у">e</div>
+                        <div class="key" data-en="r" data-ru="к">r</div>
+                        <div class="key" data-en="t" data-ru="е">t</div>
+                        <div class="key" data-en="y" data-ru="н">y</div>
+                        <div class="key" data-en="u" data-ru="г">u</div>
+                        <div class="key" data-en="i" data-ru="ш">i</div>
+                        <div class="key" data-en="o" data-ru="щ">o</div>
+                        <div class="key" data-en="p" data-ru="з">p</div>
+                        <div class="key" data-en="[" data-ru="х" data-shift-en="{">[</div>
+                        <div class="key" data-en="]" data-ru="ъ" data-shift-en="}">]</div>
+                        <div class="key" data-en="\" data-ru="\">\</div>
+                        <div class="key service" data-action="backspace">
+                            <span class="fas fa-backspace keyboard__button-backspace" title="Backspace"></span>
+                        </div>
+                    </div>
+                    <div class="keyboard__line">
+                        <div class="key language" data-action="language">en</div>
+                        <div class="key" data-en="a" data-ru="ф">a</div>
+                        <div class="key" data-en="s" data-ru="ы">s</div>
+                        <div class="key" data-en="d" data-ru="в">d</div>
+                        <div class="key" data-en="f" data-ru="а">f</div>
+                        <div class="key" data-en="g" data-ru="п">g</div>
+                        <div class="key" data-en="h" data-ru="р">h</div>
+                        <div class="key" data-en="j" data-ru="о">j</div>
+                        <div class="key" data-en="k" data-ru="л">k</div>
+                        <div class="key" data-en="l" data-ru="д">l</div>
+                        <div class="key" data-en=";" data-ru="ж" data-shift-en=":">;</div>
+                        <div class="key" data-en="'" data-ru="э" data-shift-en='"'>'</div>
+                        <div class="key service" data-action="enter">
+                            <span class="fas fa-level-up-alt keyboard__button-enter" title="Enter"></span>
+                        </div>
+                    </div>
+                    <div class="keyboard__line">
+                        <div class="key shift" data-action="capsLock">
+                            <span class="fas fa-chevron-up keyboard__button-caps-up" title="Caps Lock"></span>
+                            <span class="fas fa-angle-down keyboard__button-caps-down hidden" title="Caps Lock"></span>
+                            <div class="capsLock-toggle"></div>
+                        </div>
+                        <div class="key" data-en="z" data-ru="я">z</div>
+                        <div class="key" data-en="x" data-ru="ч">x</div>
+                        <div class="key" data-en="c" data-ru="с">c</div>
+                        <div class="key" data-en="v" data-ru="м">v</div>
+                        <div class="key" data-en="b" data-ru="и">b</div>
+                        <div class="key" data-en="n" data-ru="т">n</div>
+                        <div class="key" data-en="m" data-ru="ь">m</div>
+                        <div class="key" data-en="," data-ru="б" data-shift-en="<">,</div>
+                        <div class="key" data-en="." data-ru="ю" data-shift-en=">">.</div>
+                        <div class="key" data-en="/" data-ru="." data-shift-en="?" data-shift-ru=",">/</div>
+                        <div class="key shift" data-action="shift">
+                            <span class="fa fa-refresh fa-spin keyboard__button-shift" title="Shift"></span>
+                            <div class="shift-toggle"></div>
+                        </div>
+                    </div>
+                    <div class="keyboard__line">
+                        <div class="key space" data-action="space">Space</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Keyboard end -->
+    </main>
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</body>
+
+</html>
